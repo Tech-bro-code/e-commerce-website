@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family:  "Montserrat", sans-serif;
+}
+body{
+  width: 100%;
+  height: 100vh;
+ 
+  align-items: center;
+ 
+}
+header{
+ align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  
+
+}
+nav{
+  padding:15px;
+  width:60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+h1{
+  text-align: center;
+}
+.card{
+  display: grid;
+    /* grid-template-columns: repeat(5, 180px); */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: max(60%, 32rem);
+    gap:45px;
+    padding: 60px 0px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.product{
+  width: 100%;
+  /* border: 1px solid rgba(102, 99, 99, 0.17); */
+  position: relative;
+  
+  height: 100%;
+  align-content: center;
+  padding: 20px;
+  margin: 0 auto;
+
+}
+.img-list:hover{
+  animation: scale 0.6s 0s ease-in-out;
+  cursor: pointer;
+  /* background-color: black; */
+}
+@keyframes scale{
+  from{
+    transform: scale(1)
+} to{
+    transform: scale(1.1)
+}
+}
+img{
+  height:100%;
+  width:100%;
+  margin: 0 auto;
+  display: block;
+}
+.img-list{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.p-title{
+  font-size: 12px;
+  padding: 3px;
+  width: 80%;
+  text-overflow:ellipsis;
+  margin: 0 auto;
+}
+.p-price{
+  font-size: 12px;
+  padding: 5px;
+}
+.p-cat{
+  font-size: 14px;
+
+}
+button{
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: rgb(143, 118, 98);
+  color: aliceblue;
+  outline: none;
+  border: none;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  width: 80%;
+  margin-top: 5px;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+  position: absolute;
+}
+button:hover{
+  cursor: pointer;
+}
